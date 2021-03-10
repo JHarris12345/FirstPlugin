@@ -13,10 +13,9 @@ public class BreakBlock implements Listener {
         Block blockBroken = event.getBlock();
 
         if (blockBroken.getType() == Material.DIAMOND_ORE) {
-            event.setCancelled(true);
-            blockBroken.setType(Material.AIR);
-            ItemStack diamonds = new ItemStack(Material.DIAMOND, 2);
-            blockBroken.getWorld().dropItemNaturally(blockBroken.getLocation(), diamonds);
+            event.setDropItems(false);
+            ItemStack acaciaBoat = new ItemStack(Material.ACACIA_BOAT, 2);
+            blockBroken.getWorld().dropItemNaturally(blockBroken.getLocation(), acaciaBoat);
         }
     }
 }
