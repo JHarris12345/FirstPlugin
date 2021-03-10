@@ -5,3 +5,7 @@ api-version: 1.16
 prefix: DoubleDropsLogPrefix
 authors: [ JHarris ]
 description: Diamond ores drop 2 diamonds!
+commands:
+  wipeme:
+    description: Clears the user's inventory!
+    usage: /<command>
