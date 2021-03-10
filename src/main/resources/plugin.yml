@@ -1,0 +1,7 @@
+name: DoubleDrops
+version: ${project.version}
+main: me.jharris.doubledrops.Main
+api-version: 1.16
+prefix: DoubleDropsLogPrefix
+authors: [ JHarris ]
+description: Diamond ores drop 2 diamonds!
