@@ -9,3 +9,20 @@ commands:
   wipeme:
     description: Clears the user's inventory!
     usage: /<command>
+    aliases: [killme, endme]
+  zeus:
+    description: Become invincible!
+    usage: /<command>
+    aliases: [titan, cantdie, immortal, eternal]
+  setFood:
+    description: Set the food from in game
+    usage: /<command>
+  ViewConfig:
+    description: view config from separate command class
+    usage: /<command>
+  SendWord:
+    description: Send a word to yourself
+    usage: /<command>
+  SendWordTo:
+    description: Send a word to someone else
+    usage: /<command>
