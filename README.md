@@ -1,2 +1,2 @@
-# DoubleDrops
-Testing plugin making by doubling diamond drops from diamond ores
+# First Plugin
+My first java plugin where I'm just testing a ton of random features and things!
