@@ -1,3 +1,4 @@
+NoPermission: '&6[ConfigMessage] &cYou don''t have permission to do this!'
 Food: 'Potato'
 Number: 125
 Boolean: true
@@ -5,3 +6,8 @@ FoodList:
   - 'Pizza'
   - 'Orange'
   - 'Grape'
+FlyEnable: '&6[ConfigMessage] &aFly has been enabled!'
+FlyDisable: '&6[ConfigMessage] &cFly has been disabled!'
+TPBowDisplayname: '&b&lTeleport Bow'
+TPBowTeleportMessage: '&6[ConfigMessage] &6Swooosh!'
+GiveTPBowOnJoin: true

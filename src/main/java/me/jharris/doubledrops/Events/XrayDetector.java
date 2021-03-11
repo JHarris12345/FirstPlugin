@@ -1,4 +1,4 @@
-package me.jharris.doubledrops;
+package me.jharris.doubledrops.Events;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;

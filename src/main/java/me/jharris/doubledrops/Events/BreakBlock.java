@@ -1,4 +1,4 @@
-package me.jharris.doubledrops;
+package me.jharris.doubledrops.Events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

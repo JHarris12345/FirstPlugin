@@ -26,3 +26,15 @@ commands:
   SendWordTo:
     description: Send a word to someone else
     usage: /<command>
+  Vault:
+    description: Open the vault GUI
+    usage: /<command>
+  Fly!:
+    description: Turns on flight
+    usage: /<command>
+  TPBow:
+    description: Teleport to where you shoot
+    usage: /<command>
+  Armorstand:
+    description: Spawn in an armor stand
+    usage: /<command>
