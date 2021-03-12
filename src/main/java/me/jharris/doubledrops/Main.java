@@ -25,6 +25,7 @@ public final class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new BreakBlock(), this);
         getServer().getPluginManager().registerEvents(new GUIClickEvent(), this);
         getServer().getPluginManager().registerEvents(new AntiWither(this), this);
+        getServer().getPluginManager().registerEvents(new PlayerMove(this), this);
         getServer().getPluginManager().registerEvents(new TeleportBowEvent(this), this);
         getServer().getPluginManager().registerEvents(new BowJoinEvent(this), this);
         getServer().getPluginManager().registerEvents(new XrayDetector(), this);

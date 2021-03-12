@@ -13,3 +13,4 @@ TPBowDisplayname: '&b&lTeleport Bow'
 TPBowTeleportMessage: '&6[ConfigMessage] &6Swooosh!'
 GiveTPBowOnJoin: true
 WitherSpawning: false
+PlayerMove: true
