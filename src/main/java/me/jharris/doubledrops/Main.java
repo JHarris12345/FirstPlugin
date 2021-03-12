@@ -23,13 +23,15 @@ public final class Main extends JavaPlugin {
         System.out.println("Hello World!");
 
         getServer().getPluginManager().registerEvents(new BreakBlock(), this);
+        getServer().getPluginManager().registerEvents(new GUIClickEvent(), this);
+        getServer().getPluginManager().registerEvents(new AntiWither(this), this);
         getServer().getPluginManager().registerEvents(new TeleportBowEvent(this), this);
         getServer().getPluginManager().registerEvents(new BowJoinEvent(this), this);
         getServer().getPluginManager().registerEvents(new XrayDetector(), this);
-        getServer().getPluginManager().registerEvents(new PlayerMove(), this);
         getServer().getPluginManager().registerEvents(new CowKill(), this);
         getServer().getPluginCommand("wipeme").setExecutor(new ClearCommand(this));
         getServer().getPluginCommand("TPBow").setExecutor(new SpawnTPBow(this));
+        getServer().getPluginCommand("gui").setExecutor(new GUI(this));
         getCommand("zeus").setExecutor(new ZeusCommand());
         getCommand("SendWord").setExecutor(new SendWord());
         getCommand("SendWordTo").setExecutor(new SendTargetedWord());
@@ -64,6 +66,14 @@ public final class Main extends JavaPlugin {
             getConfig().set("Food", "Shrimp");
         }
 
+        if (command.getName().equals("ddreload")) {
+            Player player = (Player) sender;
+
+            reloadConfig();
+            player.sendMessage(ChatColor.GREEN + "The config has been reloaded!");
+        }
         return true;
     }
+
+
 }

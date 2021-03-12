@@ -38,3 +38,9 @@ commands:
   Armorstand:
     description: Spawn in an armor stand
     usage: /<command>
+  ddreload:
+    description: Reload the configs
+    usage: /<command>
+  gui:
+    description: Bring up a GUI
+    usage: /<command>

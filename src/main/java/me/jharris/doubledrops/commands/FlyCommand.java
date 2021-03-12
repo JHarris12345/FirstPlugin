@@ -49,8 +49,8 @@ public class FlyCommand implements CommandExecutor {
     }
     //Stop dupe code by making a method that you can sub variables in for like above (putting flyMethod(target) replaces all player.X with target.X etc//
     private void flyMethod(Player player) {
-        String flyenablemessage = plugin.getConfig().getString("FlyEnable");
-        String flydisablemessage = plugin.getConfig().getString("FlyDisable");
+        String flyenablemessage = plugin.getConfig().getString("Fly.Enable");
+        String flydisablemessage = plugin.getConfig().getString("Fly.Disable");
 
         if (player.hasPermission("flyplugin.fly")) {
 
