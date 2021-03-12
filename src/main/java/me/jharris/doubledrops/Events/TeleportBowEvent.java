@@ -10,6 +10,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.ProjectileHitEvent;
+import org.bukkit.util.Vector;
+import org.jetbrains.annotations.NotNull;
 
 public class TeleportBowEvent implements Listener {
 
@@ -26,7 +28,8 @@ public class TeleportBowEvent implements Listener {
 
         if(e.getEntity() instanceof Arrow){
             Player player = (Player) e.getEntity().getShooter();
-            Location location = e.getEntity().getLocation();
+            Vector direction = player.getLocation().getDirection();
+            Location location = e.getEntity().getLocation().setDirection(direction);
 
 
             player.teleport(location);
