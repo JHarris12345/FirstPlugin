@@ -14,3 +14,7 @@ TPBowTeleportMessage: '&6[ConfigMessage] &6Swooosh!'
 GiveTPBowOnJoin: true
 WitherSpawning: false
 PlayerMove: true
+WitherSpawnAttempt: '&cWither Spawning is disabled'
+Ores:
+  - DIAMOND_ORE
+  - EMERALD_ORE

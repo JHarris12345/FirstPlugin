@@ -1,6 +1,7 @@
 package me.jharris.doubledrops.Events;
 
 import me.jharris.doubledrops.Main;
+import net.md_5.bungee.api.ChatMessageType;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -31,12 +32,13 @@ public class AntiWither implements Listener {
 
         if(e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.BUILD_WITHER)){
 
+            String message = plugin.getConfig().getString("WitherSpawnAttempt");
+
             for (Entity entity : e.getEntity().getNearbyEntities(5,5,5)) {
                 if (entity instanceof Player){
                     Player player = (Player) entity;
                     e.setCancelled(true);
-                    System.out.println("A Wither was attempted to be spawned");
-                    player.sendMessage(ChatColor.RED + "Wither spawning is disabled!");
+                    player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
                 }
             }
 

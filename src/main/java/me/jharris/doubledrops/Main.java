@@ -28,7 +28,7 @@ public final class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerMove(this), this);
         getServer().getPluginManager().registerEvents(new TeleportBowEvent(this), this);
         getServer().getPluginManager().registerEvents(new BowJoinEvent(this), this);
-        getServer().getPluginManager().registerEvents(new XrayDetector(), this);
+        getServer().getPluginManager().registerEvents(new XrayDetector(this), this);
         getServer().getPluginManager().registerEvents(new CowKill(), this);
         getServer().getPluginCommand("wipeme").setExecutor(new ClearCommand(this));
         getServer().getPluginCommand("TPBow").setExecutor(new SpawnTPBow(this));
@@ -69,8 +69,9 @@ public final class Main extends JavaPlugin {
 
         if (command.getName().equals("ddreload")) {
             Player player = (Player) sender;
-
             reloadConfig();
+            XrayDetector.rareores.clear();
+            for (String i : getConfig().getStringList("Ores"))XrayDetector.rareores.add(i);
             player.sendMessage(ChatColor.GREEN + "The config has been reloaded!");
         }
         return true;
