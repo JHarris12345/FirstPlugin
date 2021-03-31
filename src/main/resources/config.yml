@@ -18,3 +18,17 @@ WitherSpawnAttempt: '&cWither Spawning is disabled'
 Ores:
   - DIAMOND_ORE
   - EMERALD_ORE
+create-message: '&aCreated armor stand!'
+RTP:
+  worldborder: true #True if you want to limit how far players teleport
+  border: 1000
+Motd:
+  enabled: true
+  message:
+    - '&bline1'
+    - '&eline2'
+    - '&cline3'
+Launchpad:
+  enabled: true
+  topblock: STONE_PRESSURE_PLATE
+  bottomblock: REDSTONE_BLOCK

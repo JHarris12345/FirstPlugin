@@ -71,5 +71,12 @@
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>me.jharris.actionbarapi</groupId>
+            <artifactId>actionbarapi</artifactId>
+            <scope>system</scope>
+            <version>1.5.4</version>
+            <systemPath>D:/Users/j0shu/Extra Stuff/Private/Minecraft/Java/Maven/ActionBarAPI-1.5.4.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

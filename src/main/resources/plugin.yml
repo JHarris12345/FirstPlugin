@@ -5,6 +5,7 @@ api-version: 1.16
 prefix: DoubleDropsLogPrefix
 authors: [ JHarris ]
 description: Diamond ores drop 2 diamonds!
+depend: [ActionBarAPI]
 commands:
   wipeme:
     description: Clears the user's inventory!
@@ -43,4 +44,37 @@ commands:
     usage: /<command>
   gui:
     description: Bring up a GUI
+    usage: /<command>
+  astandgui:
+    description: Bring up a GUI for Armor Stands
+    usage: /<command>
+  hologram:
+    description: Create a hologram
+    usage: /<command>
+  message:
+    description: Sends the message from the custom config
+    usage: /<command>
+  sign:
+    description: Spawns a sign
+    usage: /<command>
+  bangui:
+    description: Opens the ban gui
+    usage: /<command>
+  rtp:
+    description: Random teleport
+    usage: /<command>
+  invis:
+    description: Go invisible
+    usage: /<command>
+  goto:
+    description: TP to a player
+    usage: /<command>
+  bringall:
+    description: TP everyone to you
+    usage: /<command>
+  gameover:
+    description: End a game with a winner, loser and final score
+    usage: /<command>
+  removeall:
+    description: Removes every entity
     usage: /<command>
